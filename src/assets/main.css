@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind CSS normalization and base styles */
+html {
+  @apply antialiased text-base leading-normal bg-white text-gray-900;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+}
+
+body {
+  @apply m-0 p-0 font-sans;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold leading-tight;
+}
+
+p {
+  @apply mb-4;
+}
+
+ul,
+ol {
+  @apply pl-6 mb-4;
+}
+
+a {
+  @apply text-blue-600 underline hover:text-blue-800;
+}
+
+img {
+  @apply max-w-full h-auto align-middle;
+}
+
+button,
+input,
+textarea,
+select {
+  @apply font-sans text-base;
+}
+
+* {
+  @apply box-border;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_boldit.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova_blackit.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
