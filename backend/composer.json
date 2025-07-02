@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.10",
+        "getbrevo/brevo-php": "^2.0"
+    }
+}
