@@ -6,7 +6,7 @@
                 <span
                     class="flex items-center bg-teal-400 text-white text-base font-semibold rounded-full px-5 py-2 gap-2 shadow-sm">
                     <StarIcon class="w-4 h-4" />
-                    Избранный
+                    {{ tariffName }}
                 </span>
             </div>
             <div class="relative w-[370px] h-[230px] mb-8">
@@ -32,4 +32,11 @@
 
 <script setup>
 import StarIcon from './icons/StarIcon.vue'
+
+defineProps({
+    tariffName: {
+        type: String,
+        default: '...'
+    }
+})
 </script>
